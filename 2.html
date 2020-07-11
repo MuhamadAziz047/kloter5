@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      // Di suatu penangkaran terdapat 1476 ikan mas.
+      var ikanPenangkaran = prompt("Masukkan total Ikan Mas di penangkaran:");
+
+      // Namun sebelum melahirkan, 6% dari ikan mas tersebut mati
+      var totalMati = prompt("Berapa persen ikan mas yang mati:");
+
+      // Namun sebelum melahirkan, 6% dari ikan mas tersebut mati
+      var hitunganhari = prompt(
+        "Berapa hari ikan mas bertambah yang ingin anda ketahui :"
+      );
+
+      // 1476 x 6% = 88,56 ikan mati
+      var ikanMati = (totalMati * ikanPenangkaran) / 100;
+
+      // 1476 - 88,56 = 1387 ikan tersisa
+      var ikanSisa = ikanPenangkaran - ikanMati;
+
+      // 1387,5 x 5 = 6935 ikan baru / Setiap 46 hari ikan tersebut serempak melahirkan 5 ikan baru.
+      var ikanBaru = ikanSisa * 5;
+
+      // Hitungan untuk 471 hari
+      var serempak = hitunganhari / 46;
+      var hasil = serempak * ikanBaru;
+
+      document.write(
+        "Ikan mas yang bertambah setelah input hari anda adalah" +
+          " " +
+          hasil +
+          " Ikan mas"
+      );
+    </script>
+  </body>
+</html>

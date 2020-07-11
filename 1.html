@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2>Mengurutkan Abjad</h2>
+
+    <button onclick="myFunction()">Coba urutkan</button>
+
+    <p id="demo"></p>
+
+    <script>
+      var abjad = [
+        "b",
+        "a",
+        "d",
+        "c",
+        "e",
+        "g",
+        "f",
+        "j",
+        "k",
+        "i",
+        "l",
+        "h",
+        "m",
+        "p",
+        "r",
+        "q",
+        "s",
+        "n",
+        "o",
+        "z",
+        "u",
+        "t",
+        "w",
+        "x",
+        "v",
+        "y",
+      ];
+      document.getElementById("demo").innerHTML = abjad;
+
+      function myFunction() {
+        abjad.sort();
+        document.getElementById("demo").innerHTML = abjad;
+      }
+    </script>
+  </body>
+</html>

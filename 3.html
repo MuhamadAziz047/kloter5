@@ -1,0 +1,34 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Buatlah function untuk mencetak gambar seperti dibawah ini</title>
+  </head>
+  <body>
+    <div class="view"></div>
+  </body>
+  <p id="demo"></p>
+  <script>
+    var rows = 3;
+    var cols = 2;
+    var rowss = 2;
+    var colss = 2;
+    var star = "*";
+    var line = "=";
+
+    for (var i = 1; i <= rows; i++) {
+      for (var j = 1; j <= cols; j++) {
+        document.write(line + star);
+      }
+      document.write("=");
+      document.write("<br/>");
+    }
+
+    for (var i = 1; i <= rowss; i++) {
+      for (var j = 1; j <= colss; j++) {
+        document.write(star + line);
+      }
+      document.write("*");
+      document.write("<br/>");
+    }
+  </script>
+</html>
